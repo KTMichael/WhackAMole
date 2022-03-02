@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 html {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: "Shadows Into Light", cursive;
   color: white;
   background-color: #845ec2;
@@ -13,27 +13,28 @@ cursor {
 h1 {
   text-align: center;
   font-size: 5rem;
-  margin-bottom: 0;
   color: #fff;
   text-shadow: 0 0 7px #b39cd0, 0 0 10px #b39cd0, 0 0 21px #fff,
     0 0 42px #fbeaff, 0 0 82px #fbeaff, 0 0 92px #fbeaff, 0 0 102px #fbeaff,
     0 0 151px #fbeaff;
 }
-.scoreBoard,
-p {
+.scoreBoard {
   text-align: center;
   font-size: 2rem;
+  margin: 0;
+  padding: 0;
 }
+
 .game {
   width: 80%;
   height: 600px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin: 20px auto;
+  cursor: url("mallet.png") 10 100, pointer;
+  padding: 0px 30px 100px 30px;
   border: #ff6f91 2px solid;
-  /* cursor: url("mallet.png"), pointer; */
-  padding: 60px;
 }
 
 .hole {
@@ -55,7 +56,7 @@ p {
 }
 
 .hole:active {
-  cursor: url("mallet2.png"), pointer;
+  cursor: url("mallet2.png") 10 15, pointer;
 }
 
 .mole {
