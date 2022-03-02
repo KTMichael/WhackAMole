@@ -51,8 +51,7 @@ p {
   height: 100px;
   position: absolute;
   z-index: 2;
-  bottom: -70;
-  padding-top: 250px;
+  bottom: -10px;
 }
 
 .hole:active {
