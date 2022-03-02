@@ -32,7 +32,7 @@ p {
   justify-content: center;
   margin: 40px auto;
   border: #ff6f91 2px solid;
-  cursor: url("mallet.png"), pointer;
+  /* cursor: url("mallet.png"), pointer; */
   padding: 60px;
 }
 
@@ -44,41 +44,29 @@ p {
 
 .hole:after {
   display: block;
-  background: url(dirt.png)  center no-repeat;
+  background: url(dirt.png) center no-repeat;
   background-size: contain;
   content: "";
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: absolute;
   z-index: 2;
   bottom: -70;
-  border: #ff6f91 2px solid;
-  padding-top: 110px;
+  padding-top: 250px;
 }
-
-/* .hole {
-  background: url("dirt.png") no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 20vw;
-  height: 15vh;
-  background-position: center;
-  background-size: contain;
-} */
 
 .hole:active {
   cursor: url("mallet2.png"), pointer;
 }
 
 .mole {
-  background: url("mole.png") bottom center no-repeat;
+  background: url("mole.png") top center no-repeat;
   background-size: 150px;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
   transition: all 0.4s ease;
-  bottom: -70;
 }
 
 .hole.up .mole {
