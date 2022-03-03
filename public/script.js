@@ -106,7 +106,6 @@ moles.forEach((mole) => mole.addEventListener("click", whack));
 function getHighScore() {
   highScoreE = localStorage.getItem("highScoreE");
   highScoreH = localStorage.getItem("highScoreH");
-
   if (level === "easy") {
     displayHighScore.textContent = highScoreE;
   }
