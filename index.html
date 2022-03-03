@@ -13,13 +13,32 @@
   <body>
     <h1>Whack-a-mole!</h1>
     <div class="scoreBoard">
-      <div>
-        <label>Score:</label>
+      <div class="scoreee">
+        <span>Score: </span>
         <p class="score">0</p>
       </div>
-      <button onClick="startGame()">Start The Game!</button>
+      <br />
+      <div class="level">
+        Difficulty Level:
+        <label class="switch">
+          <input type="checkbox" />
+          <div class="slider"></div>
+        </label>
+        <p id="mode"></p>
+      </div>
+      <br />
+      <button id="btn" onClick="startGame()"></button>
     </div>
-    <div class="game">
+    <div id="finalScoreContainer">
+      <div id="finalScore">
+        <p id="playersFinalScoreTitle">Your Final Score:</p>
+        <p id="playersFinalScore"></p>
+        <br />
+        <br />
+        <div id="closeFinalScore">X</div>
+      </div>
+    </div>
+    <div class="gameBoard">
       <div class="hole hole1">
         <div class="mole"></div>
       </div>
