@@ -3,23 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>Whack A Mole!</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Whack-a-mole!</h1>
+    <h1 id="header">Whack-a-mole!</h1>
+    <br />
     <div class="scoreBoard">
-      <div class="scoreee">
-        <span>Score: </span>
-        <p class="score">0</p>
-      </div>
+      <h2>High Score: <span id="highScores"></span></h2>
       <br />
       <div class="level">
-        Difficulty Level:
+        Difficulty:
         <label class="switch">
           <input type="checkbox" />
           <div class="slider"></div>
@@ -32,6 +25,7 @@
     <div id="finalScoreContainer">
       <div id="finalScore">
         <p id="playersFinalScoreTitle">Your Final Score:</p>
+        <p id="newHighScore">New High Score:</p>
         <p id="playersFinalScore"></p>
         <br />
         <br />
@@ -67,6 +61,10 @@
         <div class="mole"></div>
       </div>
     </div>
+    <div class="scoreee">
+      <p>Score: <span class="score">0 </span></p>
+    </div>
+    <footer id="footer"></footer>
     <script src="script.js"></script>
   </body>
 </html>
