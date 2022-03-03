@@ -7,14 +7,11 @@
     "node": "14.17.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
   }
 }
