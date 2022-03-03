@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@font-face {
+  font-family: "superscript";
+  src: url("SUPERSCR.ttf");
+}
+
+html {
+  /* box-sizing: border-box; */
+  font-family: "Fredoka", sans-serif;
+  font-size: 100%;
+  color: white;
+  background-color: #845ec2;
+}
+
+cursor {
+  background: url(mallet.png);
+}
+button {
+  background: #fb33db;
+  color: #c3ff1f;
+  border: white 2px solid;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 0 0;
+}
+
+button:hover {
+  background: #c3ff1f;
+  color: #fb33db;
+  border: white 2px solid;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 0 0 7px #b39cd0, 0 0 10px #b39cd0, 0 0 21px #fff,
+    0 0 42px #fbeaff, 0 0 82px #fbeaff, 0 0 92px #fbeaff, 0 0 102px #fbeaff,
+    0 0 151px #fbeaff;
+  margin: 0 0 -10px 0;
+}
+.scoreBoard {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 0 -30px 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 -30px 0;
+}
+.scoreee {
+  font-family: "superscript";
+  font-size: xx-large;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: -40px;
+}
+
+.level {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+}
+
+.gameBoard {
+  width: 60vw;
+  height: 50vh;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 80px auto;
+  cursor: url("mallet.png") 10 100, pointer;
+  padding: 0px 0px 60px 0px;
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 1.3rem #bc13fe;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(dirt.png) center no-repeat;
+  background-size: contain;
+  content: "";
+  width: 100%;
+  height: 9vh;
+  position: absolute;
+  bottom: -16px;
+}
+
+.hole:active {
+  cursor: url("mallet2.png") 10 15, pointer;
+}
+
+.mole {
+  background: url("mole.png") top center no-repeat;
+  background-size: 120px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+
+.hole.up .mole {
+  top: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #98ce00;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px;
+  border: solid white 3px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 1px;
+  bottom: 1px;
+  background-color: #4ffbdf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+input:checked + .slider {
+  background-color: #bf34b4;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #9932cc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#finalScoreContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  backdrop-filter: brightness(20%);
+  z-index: 1;
+}
+
+#finalScore {
+  background: #4b4453;
+  margin: 0 auto;
+  width: 65vw;
+  height: 35vh;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  top: 25%;
+  border: 0.2rem solid #4b4453;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
+    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+#playersFinalScoreTitle {
+  text-align: center;
+  font-size: 4vh;
+  color: #fff;
+  text-shadow: 0 0 10px #b39cd0, 0 0 21px #fff, 0 0 42px #fbeaff,
+    0 0 82px #fbeaff, 0 0 92px #fbeaff;
+}
+
+#newHighScore {
+  text-align: center;
+  font-size: 4vh;
+  color: #fff;
+  text-shadow: 0 0 10px #b39cd0, 0 0 21px #fff, 0 0 42px #fbeaff,
+    0 0 82px #fbeaff, 0 0 92px #fbeaff;
+  animation-name: pulse;
+  animation-duration: 1.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#playersFinalScore {
+  text-align: center;
+  font-size: 8vh;
+  animation: pulsate 1.5s infinite alternate;
+  color: #fff;
+  text-shadow: 0 0 7px #98ce00, 0 0 10px #98ce00, 0 0 21px #fff,
+    0 0 42px #fbeaff, 0 0 82px #fbeaff, 0 0 92px #fbeaff, 0 0 102px #fbeaff,
+    0 0 151px #fbeaff;
+  margin: 0 0 -30px 0;
+}
+@keyframes pulsate {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #bc13fe,
+      0 0 80px #bc13fe, 0 0 90px #bc13fe, 0 0 100px #bc13fe, 0 0 150px #bc13fe;
+  }
+
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #bc13fe,
+      0 0 45px #bc13fe, 0 0 55px #bc13fe, 0 0 70px #bc13fe, 0 0 80px #bc13fe;
+  }
+}
+
+#closeFinalScore {
+  text-align: center;
+  cursor: pointer;
+}
