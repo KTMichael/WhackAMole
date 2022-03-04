@@ -183,6 +183,14 @@ input:checked + .slider:before {
   z-index: 2;
 }
 
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .backdrop-filter {
+    background-color: black;
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+}
+
 #finalScore {
   background: #4b4453;
   margin: 0 auto;
