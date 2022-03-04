@@ -290,12 +290,12 @@ input:checked + .slider:before {
   .slider {
     height: 1.5vh;
     width: 8vw;
-    margin-left: -18px;
+    margin: 3px 0 0 -18px;
   }
 
   .slider:before {
     height: 1.25vh;
-    width: 3vw;
+    width: 2.85vw;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(17px);
