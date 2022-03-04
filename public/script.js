@@ -21,6 +21,7 @@ function randomTime(min, max) {
 function setLevel() {
   if (level === undefined) {
     level = "easy";
+    mode.textContent = "Easy";
   }
 }
 
@@ -150,7 +151,6 @@ function checkHighScore(level) {
 }
 
 function start() {
-  mode.textContent = "Easy";
   finalScoreContainer.style.display = "none";
   newHighScore.style.display = "none";
   score = 0;
@@ -166,4 +166,3 @@ start();
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
   checkHighScore(level);
 }
-
