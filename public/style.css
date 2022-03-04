@@ -284,6 +284,7 @@ input:checked + .slider:before {
   .switch {
     height: 3vh;
     width: 2vw;
+    margin-left: 2px;
   }
 
   .slider {
@@ -294,7 +295,7 @@ input:checked + .slider:before {
 
   .slider:before {
     height: 1.75vh;
-    width: 3vw;
+    width: 3.15vw;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(17px);
