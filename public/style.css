@@ -288,13 +288,13 @@ input:checked + .slider:before {
   }
 
   .slider {
-    height: 2vh;
+    height: 1.75vh;
     width: 8vw;
     margin-left: -18px;
   }
 
   .slider:before {
-    height: 1.75vh;
+    height: 1.5vh;
     width: 3.15vw;
   }
   input:checked + .slider:before {
