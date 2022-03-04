@@ -51,7 +51,7 @@ function peep() {
     time = randomTime(900, 1000);
   }
   if (level === "hard") {
-    time = randomTime(500, 1000);
+    time = randomTime(100, 1000);
   }
   hole = randomHole(holes);
   hole.classList.add("up");
