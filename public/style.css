@@ -278,7 +278,7 @@ input:checked + .slider:before {
   }
 
   .level {
-    gap: 15px;
+    gap: 17px;
   }
 
   .switch {
@@ -293,13 +293,13 @@ input:checked + .slider:before {
   }
 
   .slider:before {
-    height: 1.5vh;
+    height: 1.75vh;
     width: 3vw;
   }
   input:checked + .slider:before {
-    -webkit-transform: translateX(15px);
-    -ms-transform: translateX(15px);
-    transform: translateX(15px);
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
   }
 
   .gameBoard {
@@ -311,7 +311,7 @@ input:checked + .slider:before {
   }
 
   .hole:after {
-    bottom: -25px;
+    bottom: -23px;
   }
   .hole.up .mole {
     top: 25%;
