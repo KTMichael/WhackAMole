@@ -166,3 +166,4 @@ start();
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
   checkHighScore(level);
 }
+

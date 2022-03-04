@@ -259,3 +259,57 @@ input:checked + .slider:before {
   text-align: center;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+    margin-bottom: -20px;
+  }
+
+  h2,
+  .scoreee,
+  .level {
+    font-size: 0.5rem;
+  }
+
+  button {
+    font-size: 0.5rem;
+    padding: 3px;
+  }
+
+  .level {
+    gap: 15px;
+  }
+
+  .switch {
+    height: 3vh;
+    width: 2vw;
+  }
+
+  .slider {
+    height: 2vh;
+    width: 8vw;
+    margin-left: -12px;
+  }
+
+  .slider:before {
+    height: 1.65vh;
+    width: 3vw;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(11px);
+    -ms-transform: translateX(11px);
+    transform: translateX(11px);
+  }
+
+  .gameBoard {
+    padding: 0px 25px 30px 25px;
+  }
+
+  .mole {
+    background-size: 20px;
+  }
+  .hole.up .mole {
+    top: 25%;
+  }
+}
