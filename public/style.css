@@ -262,18 +262,18 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-bottom: -20px;
   }
 
   h2,
   .scoreee,
   .level {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 
   button {
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 3px;
   }
 
@@ -289,7 +289,7 @@ input:checked + .slider:before {
   .slider {
     height: 2vh;
     width: 8vw;
-    margin-left: -12px;
+    margin-left: -18px;
   }
 
   .slider:before {
@@ -311,7 +311,7 @@ input:checked + .slider:before {
   }
 
   .hole:after {
-    bottom: -10px;
+    bottom: -20px;
   }
   .hole.up .mole {
     top: 25%;
