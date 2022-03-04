@@ -317,4 +317,12 @@ input:checked + .slider:before {
   .hole.up .mole {
     top: 25%;
   }
+  #finalScore {
+    margin-top: 60px;
+    width: 80vw;
+    height: 28vh;
+  }
+  #closeFinalScore {
+    margin: -250px -200px 200px 0;
+  }
 }
