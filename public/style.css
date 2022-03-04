@@ -262,7 +262,7 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: -20px;
   }
 
@@ -278,7 +278,7 @@ input:checked + .slider:before {
   }
 
   .level {
-    gap: 17px;
+    gap: 18px;
   }
 
   .switch {
