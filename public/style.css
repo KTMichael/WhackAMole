@@ -284,18 +284,18 @@ input:checked + .slider:before {
   .switch {
     height: 3vh;
     width: 2vw;
-    margin-left: 2px;
+    margin-left: 3px;
   }
 
   .slider {
-    height: 1.75vh;
+    height: 1.5vh;
     width: 8vw;
     margin-left: -18px;
   }
 
   .slider:before {
-    height: 1.5vh;
-    width: 3.15vw;
+    height: 1.25vh;
+    width: 3vw;
   }
   input:checked + .slider:before {
     -webkit-transform: translateX(17px);
