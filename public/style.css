@@ -323,6 +323,6 @@ input:checked + .slider:before {
     height: 28vh;
   }
   #closeFinalScore {
-    margin: -250px -200px 200px 0;
+    margin: -300px -200px 200px 0;
   }
 }
