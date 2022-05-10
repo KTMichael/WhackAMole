@@ -9,3 +9,4 @@ The site is launched and live via Heroku and can be found here: https://neonwhac
 
  3. Open http://localhost:8000/ in a browser to view app.
 
+![Demo](https://raw.githubusercontent.com/KTMichael/WhackAMole/WAMPic.png)
